@@ -16,7 +16,7 @@ Code Challenge - Cypress and Cucumber
 
 #### Challenge note:
 
-a) Bug with Editing a omputer - Adding date in introduced or discontinued is not saved. It was decided to not create a failing test for it.    
+a) Bug with Editing a computer - Adding date in introduced or discontinued is not saved. It was decided to not create a failing test for it.    
 b) Cypress 10 up had changed the way to deal with plugins and folder structure.
 
 #### Reference
