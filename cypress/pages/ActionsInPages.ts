@@ -1,4 +1,4 @@
-class Actions {
+class ActionsInPages {
     elements = {
       addNewComputerBtn: () => cy.get("#add"),
       filterByNameBtn: () => cy.get("#searchsubmit"),
@@ -23,5 +23,5 @@ class Actions {
     }
   }
   
-  module.exports = new Actions();
+  module.exports = new ActionsInPages();
   

@@ -3,7 +3,7 @@ class ComputerPage {
       computerNameInput: () => cy.get("#name"),
       introducedInput: () => cy.get("#introduced"),
       discontinuedInput: () => cy.get("#discontinued"),
-      companyCombobox: () => cy.get("#discontinued"),
+      companyCombobox: () => cy.get("#company")
     };
   
     typeComputerName(computerName: string) {
@@ -15,11 +15,11 @@ class ComputerPage {
     }
     
     typeDiscontinuedInput(discontinued: string) {
-      this.elements.introducedInput().type(discontinued);
+      this.elements.discontinuedInput().type(discontinued);
     }
 
     selectCompany(company: string) {
-      this.elements.introducedInput().type(company);
+      this.elements.companyCombobox().select(company);
     }
   }
   
