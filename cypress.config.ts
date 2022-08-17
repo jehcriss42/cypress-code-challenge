@@ -2,16 +2,13 @@ import { defineConfig } from "cypress";
 import * as browserify from "@cypress/browserify-preprocessor";
 import { preprocessor } from "@badeball/cypress-cucumber-preprocessor/browserify";
 
-const setupNodeEvents = (
-  on: Cypress.PluginEvents,
-  config: Cypress.PluginConfigOptions
-): Cypress.PluginConfigOptions => {
+const setupNodeEvents = (on, config) => {
   const options = {
     ...browserify.defaultOptions,
     typescript: require.resolve("typescript"),
   };
 
-  on("file:preprocessor", preprocessor(config, options));
+ on("file:preprocessor", preprocessor(config, options));
 
   return config;
 };
